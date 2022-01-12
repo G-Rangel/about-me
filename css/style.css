@@ -1,0 +1,19 @@
+body {
+  background-color: gray;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;}
+h1{
+  background-color: indigo;
+  color: orange;
+font-size: 20pt;}
+p{
+  font-size: 14pt;}
+#intro{
+  background-color: purple;
+  color:sandybrown;}
+#bio{
+  background-color: slateblue;
+  color: darkorange;}
+#goal{
+  background-color: maroon;
+  color:goldenrod;}
