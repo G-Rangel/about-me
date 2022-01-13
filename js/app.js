@@ -43,19 +43,22 @@ function q2(){
 }
 q2();
 
-let q3=prompt('Do I have a dog?').toLowerCase();
+function q3(){
+  let q3=prompt('Do I have a dog?').toLowerCase();
 
-if(q3 === 'yes' || q3 === 'y') {
-// console.log('yes');
-  alert('I do! His name is Nubs');
-  count++;
-} else if(q3 === 'no' || q3 === 'n') {
-// console.log('no');
-  alert('Sorry, I do have a furry friend in my home.');
-}else {
-// console.log('Invalid input');
-  alert('Please answer yes or no.');
+  if(q3 === 'yes' || q3 === 'y') {
+  // console.log('yes');
+    alert('I do! His name is Nubs');
+    count++;
+  } else if(q3 === 'no' || q3 === 'n') {
+  // console.log('no');
+    alert('Sorry, I do have a furry friend in my home.');
+  }else {
+  // console.log('Invalid input');
+    alert('Please answer yes or no.');
+  }
 }
+q3();
 
 let q4=prompt('Does an exotic animal live in my home?').toLowerCase();
 
