@@ -4,24 +4,27 @@
 
 let count=0;
 
-let user=prompt('Please enter name');
-alert(`Thank you, Welcome ${user}`);
+function q1(){
+  let user=prompt('Please enter name');
+  alert(`Thank you, Welcome ${user}`);
 
-alert('Time to answer questions!');
+  alert('Time to answer questions!');
 
-let q1=prompt('Do I live in Seattle, WA?').toLowerCase();
+  let q1=prompt('Do I live in Seattle, WA?').toLowerCase();
 
-if(q1 === 'yes' || q1 === 'y') {
-//  console.log('yes');
-  alert('Correct! Next question.');
-  count++;
-} else if(q1 === 'no' || q1 === 'n') {
-//  console.log('no');
-  alert('I do live in Seattle AKA the Emerald City.');
-}else {
-//  console.log('Invalid input');
-  alert('Please answer yes or no.');
+  if(q1 === 'yes' || q1 === 'y') {
+  //  console.log('yes');
+    alert('Correct! Next question.');
+    count++;
+  } else if(q1 === 'no' || q1 === 'n') {
+  //  console.log('no');
+    alert('I do live in Seattle AKA the Emerald City.');
+  }else {
+  //  console.log('Invalid input');
+    alert('Please answer yes or no.');
+  }
 }
+q1();
 
 let q2=prompt('Do I hate coffee?').toLowerCase();
 
