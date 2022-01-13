@@ -60,19 +60,22 @@ function q3(){
 }
 q3();
 
-let q4=prompt('Does an exotic animal live in my home?').toLowerCase();
+function q4(){
+  let q4=prompt('Does an exotic animal live in my home?').toLowerCase();
 
-if(q4 === 'yes' || q4 === 'y') {
-//  console.log('yes');
-  alert('Agnes is a tarantula, She has been with me for 2 years.');
-  count++;
-} else if(q4 === 'no' || q4 === 'n') {
-// console.log('no');
-  alert('I do keep a tarantula in my home.');
-}else {
-// console.log('Invalid input');
-  alert('Please answer yes or no.');
+  if(q4 === 'yes' || q4 === 'y') {
+  //  console.log('yes');
+    alert('Agnes is a tarantula, She has been with me for 2 years.');
+    count++;
+  } else if(q4 === 'no' || q4 === 'n') {
+  // console.log('no');
+    alert('I do keep a tarantula in my home.');
+  }else {
+  // console.log('Invalid input');
+    alert('Please answer yes or no.');
+  }
 }
+q4();
 
 let q5=prompt('Do I care for many plants in my home?').toLowerCase();
 
