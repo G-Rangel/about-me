@@ -26,19 +26,22 @@ function q1(){
 }
 q1();
 
-let q2=prompt('Do I hate coffee?').toLowerCase();
+function q2(){
+  let q2=prompt('Do I hate coffee?').toLowerCase();
 
-if(q2 === 'yes' || q2 === 'y') {
-// console.log('yes');
-  alert('Nope, I love coffee!');
-} else if(q2 === 'no' || q2 === 'n') {
-//  console.log('no');
-  alert(`Good one ${user}, I love coffee.`);
-  count++;
-}else {
-//  console.log('Invalid input');
-  alert('Please answer yes or no.');
+  if(q2 === 'yes' || q2 === 'y') {
+  // console.log('yes');
+    alert('Nope, I love coffee!');
+  } else if(q2 === 'no' || q2 === 'n') {
+  //  console.log('no');
+    alert(`Good one ${user}, I love coffee.`);
+    count++;
+  }else {
+  //  console.log('Invalid input');
+    alert('Please answer yes or no.');
+  }
 }
+q2();
 
 let q3=prompt('Do I have a dog?').toLowerCase();
 
