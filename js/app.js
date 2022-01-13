@@ -77,19 +77,22 @@ function q4(){
 }
 q4();
 
-let q5=prompt('Do I care for many plants in my home?').toLowerCase();
+function q5(){
+  let q5=prompt('Do I care for many plants in my home?').toLowerCase();
 
-if(q5 === 'yes' || q5 === 'y') {
-//  console.log('yes');
-  alert('Correct! So many plants.');
-  count++;
-} else if(q5 === 'no' || q5 === 'n') {
-// console.log('no');
-  alert('My partner and I own about 60 house plants.');
-}else {
-// console.log('Invalid input');
-  alert('Please answer yes or no.');
+  if(q5 === 'yes' || q5 === 'y') {
+  //  console.log('yes');
+    alert('Correct! So many plants.');
+    count++;
+  } else if(q5 === 'no' || q5 === 'n') {
+  // console.log('no');
+    alert('My partner and I own about 60 house plants.');
+  }else {
+  // console.log('Invalid input');
+    alert('Please answer yes or no.');
+  }
 }
+q5();
 
 let myNum=9;
 let left=4;
