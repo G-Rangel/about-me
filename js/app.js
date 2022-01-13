@@ -4,12 +4,12 @@
 
 let count=0;
 
+let user=prompt('Please enter name');
+alert(`Thank you, Welcome ${user}`);
+
+alert('Time to answer questions!');
+
 function q1(){
-  let user=prompt('Please enter name');
-  alert(`Thank you, Welcome ${user}`);
-
-  alert('Time to answer questions!');
-
   let q1=prompt('Do I live in Seattle, WA?').toLowerCase();
 
   if(q1 === 'yes' || q1 === 'y') {
