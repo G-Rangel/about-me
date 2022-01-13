@@ -10,6 +10,12 @@ I built this app to showcase my progress with HTML, CSS, and JS. This app will a
 
 ### Comments
 
+
+### Learning Journal 2
+
+
 <hr />
 
 ## Lab 3 - Extend the "About Me" project
+
+
