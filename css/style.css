@@ -1,19 +1,25 @@
 body {
   background-color: gray;
   font-family: 'Times New Roman', Times, serif;
+  width: 50%;
+  margin: auto;
   text-align: center;}
 h1{
   background-color: indigo;
-  color: orange;
-font-size: 20pt;}
+  color: gold;
+  font-size: 20pt;
+  border: 5px double green;}
 p{
-  font-size: 14pt;}
-#intro{
-  background-color: purple;
-  color:sandybrown;}
-#bio{
-  background-color: slateblue;
-  color: darkorange;}
-#goal{
-  background-color: maroon;
-  color:goldenrod;}
+  font-size: 14pt;
+  background-color:green;
+  color: indigo;}
+ul{
+  list-style-type: square;
+  margin-left: 44%;
+  margin-right: 44%;}
+ol{
+  list-style-type: decimal;
+  margin-left: 44%;
+  margin-right: 44%;}
+i{
+  font-style: italic;}
