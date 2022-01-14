@@ -9,7 +9,22 @@ alert(`Thank you, Welcome ${user}`);
 
 alert('Time to answer questions!');
 
-function q1(){
+//Function Invocation
+
+qu1();
+
+qu2();
+
+qu3();
+
+qu4();
+
+qu5();
+
+qu6();
+
+// Question 1
+function qu1(){
   let q1=prompt('Do I live in Seattle, WA?').toLowerCase();
 
   if(q1 === 'yes' || q1 === 'y') {
@@ -24,9 +39,10 @@ function q1(){
     alert('Please answer yes or no.');
   }
 }
-q1();
 
-function q2(){
+//Question 2
+
+function qu2(){
   let q2=prompt('Do I hate coffee?').toLowerCase();
 
   if(q2 === 'yes' || q2 === 'y') {
@@ -41,9 +57,10 @@ function q2(){
     alert('Please answer yes or no.');
   }
 }
-q2();
 
-function q3(){
+// Question 3
+
+function qu3(){
   let q3=prompt('Do I have a dog?').toLowerCase();
 
   if(q3 === 'yes' || q3 === 'y') {
@@ -58,9 +75,10 @@ function q3(){
     alert('Please answer yes or no.');
   }
 }
-q3();
 
-function q4(){
+//Question 4
+
+function qu4(){
   let q4=prompt('Does an exotic animal live in my home?').toLowerCase();
 
   if(q4 === 'yes' || q4 === 'y') {
@@ -75,9 +93,10 @@ function q4(){
     alert('Please answer yes or no.');
   }
 }
-q4();
 
-function q5(){
+//Question 5
+
+function qu5(){
   let q5=prompt('Do I care for many plants in my home?').toLowerCase();
 
   if(q5 === 'yes' || q5 === 'y') {
@@ -92,43 +111,40 @@ function q5(){
     alert('Please answer yes or no.');
   }
 }
-q5();
+
+//Question 6
 
 let myNum=9;
 let left=4;
-let q6=20;
-// Number Value info https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt
 
-//let q6= Number (prompt('What number am I thinking of between 1-15? You have 4 guesses.'));
+function qu6(){
+  while(left){
+    let q6 = prompt('What number am I thinking of between 1-15?');
 
-while(left >= 1 && q6 !== myNum){
-  if(q6 === 20){
-    q6--;
-    let q6= Number (prompt('What number am I thinking of between 1-15? You have 4 guesses.'));
-    console.log(q6);
-  }else if(q6 > myNum){
-    left--;
-    alert('Too High, Try again');
-    let q6= Number (prompt(`What number am I thinking of between 1-15? You have ${left} try(s) left.`));
-    console.log(q6);
-  }else if(q6 < myNum){
-    left--;
-    alert('Too Low, Try again');
-    let q6= Number (prompt(`What number am I thinking of between 1-15? You have ${left} try(s) left.`));
-    console.log(q6);
-  }else if(q6 === myNum){
-    alert(`Way to go ${user}, That's correct!`);
-    count++;
-  }else if(left === 0){
-    alert('Out of guesses. The answer was 9.');
+    if(parseInt(q6) === myNum){
+      alert(`Way to go ${user}, That's correct!`);
+      count++;
+      break;
+    } else if(parseInt(q6) > myNum){
+      left--;
+      alert(`Too High, Try again. You have ${left} guesses left.`);
+    } else{
+      left--;
+      alert(`Too Low, Try again. You have ${left} guesses left.`);
+    }
   }
 }
 
+if(!left){
+  alert('Out of guesses. The answer was 9.');
+}
+
+//Question 7
 
 
 
 
 
-
+//wrap up
 alert(`Good effort ${user}! You got ${count} correct out of 7. Thank you for playing.`);
-
+console.log('end');
