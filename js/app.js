@@ -114,15 +114,17 @@ function qu5(){
 
 //Question 6
 
-let myNum=9;
-let left=4;
+
 
 function qu6(){
+  let myNum=9;
+  let left=4;
+  //loop
   while(left){
     let q6 = prompt('What number am I thinking of between 1-15?');
 
     if(parseInt(q6) === myNum){
-      alert(`Way to go ${user}, That's correct!`);
+      alert(`Way to go ${user}! That's correct!`);
       count++;
       break;
     } else if(parseInt(q6) > myNum){
@@ -133,18 +135,37 @@ function qu6(){
       alert(`Too Low, Try again. You have ${left} guesses left.`);
     }
   }
+  if(!left){
+    alert('Out of guesses. The answer was 9.');
+  }
 }
 
-if(!left){
-  alert('Out of guesses. The answer was 9.');
-}
+
 
 //Question 7
+
+let food = ['mexican','seafood','bbq','coffee','fruit'];
+
+let times = 6;
+
+while (times){
+  let q7 = prompt(`Can you guess what kind of foods I like? You have ${times} attempts.`);
+
+  for(let i = 0; i < food.length; i++){
+    if(q7 === food[i]){
+      alert(`I do like ${q7}`);
+      count++;
+      times = 1;
+      break;
+    }
+  }
+  times--;
+}
 
 
 
 
 
 //wrap up
-alert(`Good effort ${user}! You got ${count} correct out of 7. Thank you for playing.`);
+alert(`Good effort ${user}! You got ${count} correct out of 7. Thanks for playing!`);
 console.log('end');
