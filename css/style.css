@@ -1,25 +1,43 @@
 body {
-  background-color: gray;
+  background-color: rgb(143, 141, 141);
   font-family: 'Times New Roman', Times, serif;
-  width: 50%;
+  width: 90%;
   margin: auto;
   text-align: center;}
+
+img {
+  position:relative;
+  height: 900px;
+  width: 100%;}
+
+.all {
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  right: 30%;}
+
 h1{
-  background-color: indigo;
-  color: gold;
+  background-color: rgb(75, 0, 130, .5);
+  color: rgb(255, 215, 0);
   font-size: 20pt;
-  border: 5px double green;}
+  border: 5px double rgb(2, 139, 2);}
+
 p{
   font-size: 14pt;
-  background-color:green;
-  color: indigo;}
+  background-color: rgba(2, 63, 2, 0.5);
+  color: rgba(240, 114, 240, 0.933);}
+
 ul{
-  list-style-type: square;
-  margin-left: 44%;
-  margin-right: 44%;}
+  list-style-type: square;}
 ol{
-  list-style-type: decimal;
-  margin-left: 44%;
-  margin-right: 44%;}
+  list-style-type: decimal;}
+
 i{
   font-style: italic;}
+
+.list{
+  font-size: 15pt;
+  text-align:start;
+  display: inline-block;
+}
+
