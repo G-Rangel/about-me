@@ -131,6 +131,8 @@ function qu6(){
     } else if(parseInt(q6) < myNum){
       left--;
       alert(`Too Low, Try again. You have ${left} guesses left.`);
+    } else{
+      left--;
     }
   }
   if(!left){
